@@ -1,5 +1,7 @@
 package clica.medica.view.pasciente;
 
+import clica.medica.view.atendente.CadastroAtendente;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -189,7 +191,9 @@ public class AtendenteLoginForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+      CadastroAtendente cadastroAtendente = new CadastroAtendente ();
+      cadastroAtendente.pack();
+      cadastroAtendente.setVisible (true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
@@ -279,4 +283,5 @@ public class AtendenteLoginForm extends javax.swing.JFrame {
     private java.awt.Menu menu2;
     private java.awt.MenuBar menuBar1;
     // End of variables declaration//GEN-END:variables
+
 }
