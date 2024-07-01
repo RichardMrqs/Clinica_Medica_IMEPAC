@@ -8,7 +8,7 @@ package clinica.medica;
  *
  * @author 211-000413
  */
-public class ClicaMedica {
+public class ClinicaMedica {
 
     /**
      * @param args the command line arguments
