@@ -1,4 +1,4 @@
-package clica.medica.view.atendente;
+package clinica.medica.view.atendente;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license

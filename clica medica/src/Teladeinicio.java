@@ -1,5 +1,5 @@
 
-import clica.medica.view.pasciente.AtendenteLoginForm;
+import clinica.medica.view.paciente.AtendenteLoginForm;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license

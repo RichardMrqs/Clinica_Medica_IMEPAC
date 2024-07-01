@@ -1,6 +1,6 @@
-package clica.medica.view.pasciente;
+package clinica.medica.view.paciente;
 
-import clica.medica.view.atendente.CadastroAtendente;
+import clinica.medica.view.atendente.CadastroAtendente;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
