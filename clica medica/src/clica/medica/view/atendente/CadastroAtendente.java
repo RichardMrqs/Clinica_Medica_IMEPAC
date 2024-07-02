@@ -32,6 +32,7 @@ public class CadastroAtendente extends javax.swing.JFrame {
         textArea1 = new java.awt.TextArea();
         label3 = new java.awt.Label();
         label4 = new java.awt.Label();
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         label1 = new java.awt.Label();
         checkbox1 = new java.awt.Checkbox();
@@ -180,6 +181,7 @@ public class CadastroAtendente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
     private java.awt.Checkbox checkbox1;
     private java.awt.Checkbox checkbox5;
     private java.awt.Checkbox checkbox6;
