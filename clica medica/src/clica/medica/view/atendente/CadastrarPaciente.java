@@ -44,7 +44,7 @@ public class CadastrarPaciente extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         textField5 = new java.awt.TextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel2.setBackground(new java.awt.Color(204, 255, 204));
         jPanel2.setForeground(new java.awt.Color(204, 255, 204));
@@ -228,7 +228,10 @@ public class CadastrarPaciente extends javax.swing.JFrame {
     }//GEN-LAST:event_textField3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
+     Convenio convenio = new Convenio();
+            convenio.pack();
+            convenio.setVisible(true);
+            
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
