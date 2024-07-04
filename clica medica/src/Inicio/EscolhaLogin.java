@@ -1,6 +1,8 @@
+package Inicio;
 
+
+import Administrar.Administrador;
 import clica.medica.medico.MedicoLogin;
-import clica.medica.view.atendente.AdministrarAtendente;
 import clica.medica.view.atendente.AtendenteLoginForm;
 
 /*
@@ -176,7 +178,7 @@ public class EscolhaLogin extends javax.swing.JFrame {
             medicoLogin.setVisible(true);
         } 
           if (AdmButton.getState() == true) {
-            AdministrarAtendente administrarAtendente = new AdministrarAtendente();
+            Administrador administrarAtendente = new Administrador();
            administrarAtendente.pack();
             administrarAtendente.setVisible(true);
           }      

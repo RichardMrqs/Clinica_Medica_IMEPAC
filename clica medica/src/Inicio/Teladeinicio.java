@@ -1,4 +1,7 @@
+package Inicio;
 
+
+import Inicio.EscolhaLogin;
 import clica.medica.view.atendente.AtendenteLoginForm;
 
 /*
@@ -67,7 +70,7 @@ public class Teladeinicio extends javax.swing.JFrame {
 
         jMenu1.setText("usuarios");
 
-        jMenuItem1.setText("Boas vinda");
+        jMenuItem1.setText("Entrar");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
