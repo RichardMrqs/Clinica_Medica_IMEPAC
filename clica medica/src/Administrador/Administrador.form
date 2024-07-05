@@ -48,11 +48,11 @@
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="162" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="checkbox2" min="-2" max="-2" attributes="0"/>
-                              <Component id="checkbox1" min="-2" max="-2" attributes="0"/>
+                              <Component id="AtendenteButton" min="-2" max="-2" attributes="0"/>
+                              <Component id="MedicoButton" min="-2" max="-2" attributes="0"/>
                               <Component id="jButton3" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="checkbox3" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="checkbox4" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="AdmButton" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="ConvenioButton" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -70,13 +70,13 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
-                  <Component id="checkbox2" min="-2" max="-2" attributes="0"/>
+                  <Component id="AtendenteButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                  <Component id="checkbox1" min="-2" max="-2" attributes="0"/>
+                  <Component id="MedicoButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                  <Component id="checkbox3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AdmButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                  <Component id="checkbox4" min="-2" max="-2" attributes="0"/>
+                  <Component id="ConvenioButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="36" max="32767" attributes="0"/>
                   <Component id="jButton3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
@@ -96,7 +96,7 @@
             <Property name="text" type="java.lang.String" value="Administrar "/>
           </Properties>
         </Component>
-        <Component class="java.awt.Checkbox" name="checkbox1">
+        <Component class="java.awt.Checkbox" name="MedicoButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="12" style="1"/>
@@ -104,7 +104,7 @@
             <Property name="label" type="java.lang.String" value="M&#xe9;dico"/>
           </Properties>
         </Component>
-        <Component class="java.awt.Checkbox" name="checkbox2">
+        <Component class="java.awt.Checkbox" name="AtendenteButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="12" style="1"/>
@@ -126,7 +126,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="java.awt.Checkbox" name="checkbox3">
+        <Component class="java.awt.Checkbox" name="AdmButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="12" style="1"/>
@@ -134,7 +134,7 @@
             <Property name="label" type="java.lang.String" value="Administrador"/>
           </Properties>
         </Component>
-        <Component class="java.awt.Checkbox" name="checkbox4">
+        <Component class="java.awt.Checkbox" name="ConvenioButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="12" style="1"/>

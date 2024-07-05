@@ -82,7 +82,7 @@
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="checkbox5" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="checkbox6" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="checkbox7" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="AlterarPacienteButton" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="CadastrarPacienteButton" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="label1" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -103,7 +103,7 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="checkbox6" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="checkbox7" min="-2" max="-2" attributes="0"/>
+                  <Component id="AlterarPacienteButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="checkbox5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
@@ -154,7 +154,7 @@
             <Property name="name" type="java.lang.String" value="cadastrar paciente" noResource="true"/>
           </Properties>
         </Component>
-        <Component class="java.awt.Checkbox" name="checkbox7">
+        <Component class="java.awt.Checkbox" name="AlterarPacienteButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dubai" size="14" style="0"/>

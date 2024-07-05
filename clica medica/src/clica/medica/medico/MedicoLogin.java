@@ -182,7 +182,11 @@ public class MedicoLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_textField2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
+         OpçõesMédico opçõesMédico = new OpçõesMédico ();
+         opçõesMédico.pack();
+         opçõesMédico.setVisible (true); }
+    {
+                 
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void textField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField4ActionPerformed

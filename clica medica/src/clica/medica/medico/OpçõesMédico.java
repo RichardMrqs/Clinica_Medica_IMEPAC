@@ -28,10 +28,10 @@ public class OpçõesMédico extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        checkbox3 = new java.awt.Checkbox();
+        AgendarRetornoButton = new java.awt.Checkbox();
         jButton1 = new javax.swing.JButton();
-        checkbox4 = new java.awt.Checkbox();
-        checkbox5 = new java.awt.Checkbox();
+        ExcluirProntuárioButton = new java.awt.Checkbox();
+        ConsultarProntuarioButton = new java.awt.Checkbox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -41,8 +41,8 @@ public class OpçõesMédico extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 153, 51));
         jLabel1.setText("Olá, médico! Seja bem-vindo!");
 
-        checkbox3.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        checkbox3.setLabel("Agendar retorno");
+        AgendarRetornoButton.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        AgendarRetornoButton.setLabel("Agendar retorno");
 
         jButton1.setBackground(new java.awt.Color(0, 204, 102));
         jButton1.setForeground(new java.awt.Color(0, 102, 0));
@@ -53,11 +53,11 @@ public class OpçõesMédico extends javax.swing.JFrame {
             }
         });
 
-        checkbox4.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        checkbox4.setLabel("Excluir prontuário");
+        ExcluirProntuárioButton.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        ExcluirProntuárioButton.setLabel("Excluir prontuário");
 
-        checkbox5.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        checkbox5.setLabel("Consultar prontuário");
+        ConsultarProntuarioButton.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        ConsultarProntuarioButton.setLabel("Consultar prontuário");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -71,9 +71,9 @@ public class OpçõesMédico extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(146, 146, 146)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(checkbox3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(checkbox4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(checkbox5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(AgendarRetornoButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ExcluirProntuárioButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ConsultarProntuarioButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(169, 169, 169)
                         .addComponent(jButton1)))
@@ -85,11 +85,11 @@ public class OpçõesMédico extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1)
                 .addGap(66, 66, 66)
-                .addComponent(checkbox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ConsultarProntuarioButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
-                .addComponent(checkbox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(AgendarRetornoButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
-                .addComponent(checkbox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ExcluirProntuárioButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(26, 26, 26))
@@ -110,7 +110,20 @@ public class OpçõesMédico extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
+        if (ConsultarProntuarioButton.getState() == true) {
+            Prontuário prontuário = new Prontuário();
+            prontuário.pack();
+            prontuário.setVisible(true);
+        } else {
+            AgendarRetorno agendarRetorno = new AgendarRetorno();
+            agendarRetorno.pack();
+            agendarRetorno.setVisible(true);
+        } 
+          if (ExcluirProntuárioButton.getState() == true) {
+            ExcluirProntuario excluirProntuario = new ExcluirProntuario();
+           excluirProntuario.pack();
+            excluirProntuario.setVisible(true);
+          }      
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -149,9 +162,9 @@ public class OpçõesMédico extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Checkbox checkbox3;
-    private java.awt.Checkbox checkbox4;
-    private java.awt.Checkbox checkbox5;
+    private java.awt.Checkbox AgendarRetornoButton;
+    private java.awt.Checkbox ConsultarProntuarioButton;
+    private java.awt.Checkbox ExcluirProntuárioButton;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;

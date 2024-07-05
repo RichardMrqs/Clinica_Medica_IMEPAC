@@ -69,7 +69,7 @@ public class PacienteConsulta extends javax.swing.JFrame {
                             .addComponent(jLabel3)
                             .addComponent(jLabel2)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(150, 150, 150)
+                        .addGap(137, 137, 137)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(75, Short.MAX_VALUE))
         );
@@ -82,9 +82,9 @@ public class PacienteConsulta extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
-                .addGap(69, 69, 69)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(65, Short.MAX_VALUE))
+                .addGap(66, 66, 66))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

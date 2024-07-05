@@ -1,4 +1,4 @@
-package Administrar;
+package Administrador;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -30,11 +30,11 @@ public class Administrador extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        checkbox1 = new java.awt.Checkbox();
-        checkbox2 = new java.awt.Checkbox();
+        MedicoButton = new java.awt.Checkbox();
+        AtendenteButton = new java.awt.Checkbox();
         jButton3 = new javax.swing.JButton();
-        checkbox3 = new java.awt.Checkbox();
-        checkbox4 = new java.awt.Checkbox();
+        AdmButton = new java.awt.Checkbox();
+        ConvenioButton = new java.awt.Checkbox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -44,11 +44,11 @@ public class Administrador extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 102, 0));
         jLabel1.setText("Administrar ");
 
-        checkbox1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        checkbox1.setLabel("Médico");
+        MedicoButton.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        MedicoButton.setLabel("Médico");
 
-        checkbox2.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        checkbox2.setLabel("Atendente");
+        AtendenteButton.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        AtendenteButton.setLabel("Atendente");
 
         jButton3.setBackground(new java.awt.Color(0, 204, 102));
         jButton3.setForeground(new java.awt.Color(0, 102, 0));
@@ -59,11 +59,11 @@ public class Administrador extends javax.swing.JFrame {
             }
         });
 
-        checkbox3.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        checkbox3.setLabel("Administrador");
+        AdmButton.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        AdmButton.setLabel("Administrador");
 
-        checkbox4.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        checkbox4.setLabel("Convênio");
+        ConvenioButton.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        ConvenioButton.setLabel("Convênio");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -74,11 +74,11 @@ public class Administrador extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(162, 162, 162)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(checkbox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(checkbox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AtendenteButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(MedicoButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton3)
-                            .addComponent(checkbox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(checkbox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(AdmButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ConvenioButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(149, 149, 149)
                         .addComponent(jLabel1)))
@@ -90,13 +90,13 @@ public class Administrador extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addGap(56, 56, 56)
-                .addComponent(checkbox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(AtendenteButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(24, 24, 24)
-                .addComponent(checkbox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(MedicoButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25)
-                .addComponent(checkbox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(AdmButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21)
-                .addComponent(checkbox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ConvenioButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addComponent(jButton3)
                 .addGap(24, 24, 24))
@@ -157,10 +157,10 @@ public class Administrador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Checkbox checkbox1;
-    private java.awt.Checkbox checkbox2;
-    private java.awt.Checkbox checkbox3;
-    private java.awt.Checkbox checkbox4;
+    private java.awt.Checkbox AdmButton;
+    private java.awt.Checkbox AtendenteButton;
+    private java.awt.Checkbox ConvenioButton;
+    private java.awt.Checkbox MedicoButton;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;

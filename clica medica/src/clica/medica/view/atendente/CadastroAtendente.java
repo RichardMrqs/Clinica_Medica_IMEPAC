@@ -1,5 +1,7 @@
 package clica.medica.view.atendente;
 
+import Administrador.Administrador;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -38,7 +40,7 @@ public class CadastroAtendente extends javax.swing.JFrame {
         CadastrarPacienteButton = new java.awt.Checkbox();
         checkbox5 = new java.awt.Checkbox();
         checkbox6 = new java.awt.Checkbox();
-        checkbox7 = new java.awt.Checkbox();
+        AlterarPacienteButton = new java.awt.Checkbox();
         label2 = new java.awt.Label();
         jButton2 = new javax.swing.JButton();
 
@@ -69,9 +71,9 @@ public class CadastroAtendente extends javax.swing.JFrame {
         checkbox6.setLabel("Agendar consulta");
         checkbox6.setName("cadastrar paciente"); // NOI18N
 
-        checkbox7.setFont(new java.awt.Font("Dubai", 0, 14)); // NOI18N
-        checkbox7.setLabel("Alterar");
-        checkbox7.setName("cadastrar paciente"); // NOI18N
+        AlterarPacienteButton.setFont(new java.awt.Font("Dubai", 0, 14)); // NOI18N
+        AlterarPacienteButton.setLabel("Alterar");
+        AlterarPacienteButton.setName("cadastrar paciente"); // NOI18N
 
         label2.setFont(new java.awt.Font("Embassy BT", 0, 24)); // NOI18N
         label2.setText("CM");
@@ -101,7 +103,7 @@ public class CadastroAtendente extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(checkbox5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(checkbox6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(checkbox7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AlterarPacienteButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(CadastrarPacienteButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(label1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 135, Short.MAX_VALUE)))
@@ -117,7 +119,7 @@ public class CadastroAtendente extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(checkbox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(checkbox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(AlterarPacienteButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(checkbox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37)
@@ -145,7 +147,20 @@ public class CadastroAtendente extends javax.swing.JFrame {
             CadastrarPaciente cadastrarPaciente = new CadastrarPaciente();
             cadastrarPaciente.pack();
             cadastrarPaciente.setVisible(true);        // TODO add your handling code here:
+        } else {
+            AgendarConsulta agendarConsulta = new AgendarConsulta();
+            agendarConsulta.pack();
+            agendarConsulta.setVisible (true);
         }
+         if (AlterarPacienteButton.getState() == true) {
+            AlterarPaciente alterarPaciente = new AlterarPaciente();
+           alterarPaciente.pack();
+            alterarPaciente.setVisible(true); 
+         } else {
+            ExcluirPaciente excluirPaciente = new ExcluirPaciente();
+            excluirPaciente.pack();
+            excluirPaciente.setVisible (true); }
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -185,11 +200,11 @@ public class CadastroAtendente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.Checkbox AlterarPacienteButton;
     private java.awt.Checkbox CadastrarPacienteButton;
     private javax.swing.ButtonGroup buttonGroup1;
     private java.awt.Checkbox checkbox5;
     private java.awt.Checkbox checkbox6;
-    private java.awt.Checkbox checkbox7;
     private javax.swing.JButton jButton2;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JOptionPane jOptionPane1;
